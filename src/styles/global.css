@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --mint: #00e0c7;
+  --ink: #1f2b3f;
+  --subtle: #677085;
+  --line: #e6e9f1;
+  --violet-soft: #f2eefb;
+  --blue-soft: #e0f3fa;
+  --peach-soft: #ffe9ea;
+  --pink-soft: #ffe7f3;
+  --shadow: 0 8px 28px rgba(31, 43, 63, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at top right, #d9f9f2 0%, var(--bg) 40%);
+  color: var(--ink);
+  font-family: "Manrope", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button,
+input {
+  font: inherit;
+}

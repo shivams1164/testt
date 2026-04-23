@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech.Care Dashboard (Static Review)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <header class="top-header card-panel">
+        <div class="brand">Tech.Care</div>
+        <nav class="top-nav">
+          <span class="nav-item">Overview</span>
+          <span class="nav-item active">Patients</span>
+          <span class="nav-item">Schedule</span>
+          <span class="nav-item">Message</span>
+          <span class="nav-item">Transactions</span>
+        </nav>
+        <div class="header-profile">
+          <div class="header-avatar">JS</div>
+          <div>
+            <p class="header-name">Dr. Jose Simmons</p>
+            <p class="header-role">General Practitioner</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard-layout">
+        <aside class="card-panel sidebar">
+          <div class="sidebar-top">
+            <h2 class="section-title">Patients</h2>
+          </div>
+          <div id="patientList"></div>
+        </aside>
+
+        <section class="dashboard-main">
+          <article class="card-panel">
+            <h2 class="section-title">Diagnosis History</h2>
+            <section class="blood-pressure-card">
+              <div class="chart-header-row">
+                <h3>Blood Pressure</h3>
+                <p>Last 6 months</p>
+              </div>
+              <div class="chart-layout">
+                <div class="chart-canvas-wrap">
+                  <canvas id="bloodPressureChart"></canvas>
+                </div>
+                <aside class="chart-stats" id="chartStats"></aside>
+              </div>
+            </section>
+            <div id="statsCards" class="stats-grid"></div>
+          </article>
+
+          <article class="card-panel">
+            <h2 class="section-title">Diagnostic List</h2>
+            <div class="diagnostic-table-wrap">
+              <table class="diagnostic-table">
+                <thead>
+                  <tr>
+                    <th>Problem/Diagnosis</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="diagnosticsBody"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-right">
+          <article class="card-panel patient-profile-card" id="profileCard"></article>
+          <article class="card-panel lab-results-card">
+            <h2 class="section-title">Lab Results</h2>
+            <ul id="labList" class="lab-list"></ul>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
