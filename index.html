@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gushwork Landing Page</title>
+    <meta
+      name="description"
+      content="A responsive landing page with interactive carousel, sticky header, and polished UI built with HTML5, CSS3, and vanilla JavaScript."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero-nav" aria-label="Primary site navigation">
+        <a class="brand" href="#home">Gushwork</a>
+        <nav class="hero-menu" aria-label="Primary">
+          <a href="#product">Product</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="hero-cta" href="#contact">Start free</a>
+      </header>
+
+      <header class="sticky-header" id="stickyHeader" aria-label="Sticky navigation">
+        <div class="sticky-inner">
+          <a class="brand" href="#home">Gushwork</a>
+          <nav class="primary-nav" aria-label="Primary">
+            <a href="#product">Product</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a class="primary-btn" href="#contact">Get started</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-content">
+            <div class="eyebrow">Design system for modern teams</div>
+            <h1>Build beautiful product experiences faster with a polished design workflow.</h1>
+            <p>
+              Ship production-ready interfaces, manage your brand assets, and align teams with precise spacing,
+              typography, and motion. Everything designed to scale on web and mobile.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#contact">Start free trial</a>
+              <a class="secondary-btn" href="#product">Explore features</a>
+            </div>
+            <div class="hero-meta">
+              <div class="meta-card">
+                <strong>15k+</strong>
+                <span>teams trust Gushwork</span>
+              </div>
+              <div class="meta-card">
+                <strong>45%</strong>
+                <span>faster product launches</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-image-shell">
+              <img
+                class="hero-image"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 700'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%233b73ff'/%3E%3Cstop offset='100%25' stop-color='%231a4bd7'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ffffff'/%3E%3Cstop offset='100%25' stop-color='%23ffffff00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='700' rx='48' fill='url(%23g)'/%3E%3Cpath d='M140 320C140 210 260 120 380 120H760C820 120 860 170 860 230V580C860 640 820 690 760 690H380C260 690 140 600 140 490V320Z' fill='%23ffffff22'/%3E%3Cpath d='M168 392C168 305 244 240 328 240H712C739 240 763 260 769 286L797 463C803 500 771 532 734 532H420C361 532 314 478 314 421V392H168Z' fill='%23ffffff33'/%3E%3Crect x='220' y='265' width='420' height='22' rx='11' fill='%23ffffff80'/%3E%3Crect x='220' y='310' width='330' height='18' rx='9' fill='%23ffffff80'/%3E%3Crect x='220' y='360' width='460' height='18' rx='9' fill='%23ffffff80'/%3E%3Crect x='220' y='410' width='280' height='18' rx='9' fill='%23ffffff80'/%3E%3Crect x='220' y='470' width='380' height='18' rx='9' fill='%23ffffff80'/%3E%3Cpath d='M500 140C550 140 590 180 590 230C590 280 550 320 500 320C450 320 410 280 410 230C410 180 450 140 500 140Z' fill='url(%23g2)'/%3E%3C/svg%3E"
+                alt="Abstract product dashboard illustration"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="data-strip" aria-label="Performance highlights">
+          <div class="data-card">
+            <span>20%</span>
+            <p>shorter design cycles</p>
+          </div>
+          <div class="data-card">
+            <span>4.9/5</span>
+            <p>customer satisfaction</p>
+          </div>
+          <div class="data-card">
+            <span>250+</span>
+            <p>components in system</p>
+          </div>
+        </section>
+
+        <section class="product-section" id="product">
+          <div class="section-intro">
+            <p class="section-label">Product</p>
+            <h2>Design tools that keep collaboration aligned and production-ready.</h2>
+          </div>
+          <div class="product-grid">
+            <article class="feature-card">
+              <span class="feature-icon">🎯</span>
+              <h3>Purpose-built components</h3>
+              <p>Reusable design blocks and documentation give your team a single source of truth for fast iteration.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">⚡</span>
+              <h3>Motion and interactive states</h3>
+              <p>Every component includes polished hover and active states, transitions, and responsive behavior.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">🔒</span>
+              <h3>Accessible by default</h3>
+              <p>Semantic structure, keyboard controls, and clear contrast ensure every experience is built to inclusive standards.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="carousel-section" id="gallery">
+          <div class="section-intro">
+            <p class="section-label">Showcase</p>
+            <h2>Interactive product visuals with smooth motion and hover feedback.</h2>
+          </div>
+          <div class="carousel-shell" data-carousel>
+            <button class="carousel-control prev" type="button" aria-label="Previous slide">‹</button>
+            <div class="carousel-track" data-carousel-track>
+              <article class="carousel-card">
+                <div class="carousel-image-wrap">
+                  <img
+                    class="carousel-image"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 700'%3E%3Cdefs%3E%3ClinearGradient id='b1' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%2355d7ff'/%3E%3Cstop offset='100%25' stop-color='%23347bd9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='700' rx='40' fill='url(%23b1)'/%3E%3Ccircle cx='500' cy='340' r='160' fill='%23ffffff33'/%3E%3Crect x='240' y='180' width='420' height='80' rx='30' fill='%23ffffff88'/%3E%3Crect x='260' y='280' width='380' height='18' rx='9' fill='%23ffffff99'/%3E%3Crect x='260' y='330' width='260' height='18' rx='9' fill='%23ffffff99'/%3E%3Crect x='260' y='380' width='320' height='18' rx='9' fill='%23ffffff99'/%3E%3C/svg%3E"
+                    alt="Dashboard preview with interactive metrics"
+                    loading="lazy"
+                  />
+                  <div class="zoom-overlay" aria-hidden="true">
+                    <span>Zoom</span>
+                  </div>
+                </div>
+                <div class="carousel-card-body">
+                  <h3>Dynamic dashboard view</h3>
+                  <p>Swipe or click through modern interface previews built for product teams and stakeholders.</p>
+                </div>
+              </article>
+
+              <article class="carousel-card">
+                <div class="carousel-image-wrap">
+                  <img
+                    class="carousel-image"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 700'%3E%3Cdefs%3E%3ClinearGradient id='b2' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ff9d5c'/%3E%3Cstop offset='100%25' stop-color='%23ff5a5a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='700' rx='40' fill='url(%23b2)'/%3E%3Crect x='140' y='200' width='620' height='360' rx='32' fill='%23ffffff22'/%3E%3Crect x='220' y='260' width='460' height='34' rx='17' fill='%23ffffffcc'/%3E%3Crect x='220' y='330' width='260' height='20' rx='10' fill='%23ffffffcc'/%3E%3Crect x='220' y='370' width='320' height='20' rx='10' fill='%23ffffffcc'/%3E%3Crect x='220' y='430' width='200' height='20' rx='10' fill='%23ffffffcc'/%3E%3C/svg%3E"
+                    alt="Mobile wireframe screen preview"
+                    loading="lazy"
+                  />
+                  <div class="zoom-overlay" aria-hidden="true">
+                    <span>Zoom</span>
+                  </div>
+                </div>
+                <div class="carousel-card-body">
+                  <h3>Mobile-friendly mockups</h3>
+                  <p>Design interactions that feel joyful on small screens with responsive scaling and gesture-friendly patterns.</p>
+                </div>
+              </article>
+
+              <article class="carousel-card">
+                <div class="carousel-image-wrap">
+                  <img
+                    class="carousel-image"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 700'%3E%3Cdefs%3E%3ClinearGradient id='b3' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%239f7bff'/%3E%3Cstop offset='100%25' stop-color='%236a4fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='700' rx='40' fill='url(%23b3)'/%3E%3Ccircle cx='320' cy='320' r='90' fill='%23ffffff33'/%3E%3Ccircle cx='540' cy='280' r='120' fill='%23ffffff22'/%3E%3Crect x='190' y='190' width='520' height='320' rx='28' fill='%23ffffff22'/%3E%3Crect x='240' y='240' width='420' height='26' rx='13' fill='%23ffffffcc'/%3E%3Crect x='240' y='300' width='360' height='18' rx='9' fill='%23ffffffcc'/%3E%3Crect x='240' y='340' width='260' height='18' rx='9' fill='%23ffffffcc'/%3E%3C/svg%3E"
+                    alt="Component library preview with interface cards"
+                    loading="lazy"
+                  />
+                  <div class="zoom-overlay" aria-hidden="true">
+                    <span>Zoom</span>
+                  </div>
+                </div>
+                <div class="carousel-card-body">
+                  <h3>Component library</h3>
+                  <p>Showcase reusable interface patterns and polished states that make design systems easy to adopt.</p>
+                </div>
+              </article>
+            </div>
+            <button class="carousel-control next" type="button" aria-label="Next slide">›</button>
+          </div>
+        </section>
+
+        <section class="solution-section" id="solutions">
+          <div class="section-intro">
+            <p class="section-label">Solutions</p>
+            <h2>Built for product teams, designers, and developers working together.</h2>
+          </div>
+          <div class="solution-grid">
+            <article class="solution-card">
+              <h3>Design systems</h3>
+              <p>Keep visual language, spacing, and motion consistent with ready-to-use system building blocks.</p>
+            </article>
+            <article class="solution-card">
+              <h3>Rapid prototyping</h3>
+              <p>Turn concept screens into interactive previews without sacrificing quality or responsiveness.</p>
+            </article>
+            <article class="solution-card">
+              <h3>Developer handoff</h3>
+              <p>Provide clean specs, token-based styles, and accessible markup guidance to keep implementation accurate.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-section" id="contact">
+          <div>
+            <p class="section-label">Ready to launch</p>
+            <h2>Bring your product vision to life with clarity and speed.</h2>
+          </div>
+          <a class="primary-btn" href="#home">Start your free workspace</a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-copy">
+          <p>Gushwork © 2026</p>
+          <p>Designed for product teams, delivered with polished interactions.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#product">Product</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
